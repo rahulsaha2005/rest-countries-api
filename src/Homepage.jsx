@@ -4,13 +4,13 @@ import Navbar from "./header.jsx";
 import Searchbar from "./searchbar.jsx";
 import Filter from "./Filter.jsx";
 import FilteredCountries from "./FilteredCountries.jsx";
-import ShimmerHomePage from "./shimmerHomePage"; // ✅ import shimmer
+import ShimmerHomePage from "./shimmerHomePage"; 
 import { useLocation } from "react-router-dom";
 
 function Homepage() {
   const location = useLocation();
   const [countries, setCountries] = useState([]);
-  const [loading, setLoading] = useState(true); // ✅ loading state
+  const [loading, setLoading] = useState(true); 
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [searchText, setSearchText] = useState("");
   useEffect(() => {
