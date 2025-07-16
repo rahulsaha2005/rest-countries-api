@@ -7,7 +7,7 @@ function ShimmerCountryDetail() {
         ⬅ Back
       </button>
 
-      {/* Simulated shimmer for title */}
+    
       <h1
         style={{
           width: "200px",
@@ -18,7 +18,7 @@ function ShimmerCountryDetail() {
       ></h1>
 
       <div className="countrydetail" style={{ display: "flex", gap: "2rem", marginTop: "1rem" }}>
-        {/* Flag shimmer */}
+    
         <div
           style={{
             width: "300px",
@@ -43,7 +43,7 @@ function ShimmerCountryDetail() {
             ></p>
           ))}
 
-          {/* Border buttons shimmer */}
+         
           <div style={{ display: "flex", gap: "0.5rem" }}>
             {Array.from({ length: 3 }).map((_, index) => (
               <div
