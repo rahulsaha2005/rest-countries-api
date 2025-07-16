@@ -4,7 +4,7 @@ export default function Filter({ selectedRegion, setSelectedRegion }) {
   return (
     <div className="filter">
       <select
-        value={selectedRegion ?? "All"} // ✅ fallback
+        value={selectedRegion ?? "All"} 
         onChange={(e) => setSelectedRegion(e.target.value)}
         aria-label="Filter by region"
       >
