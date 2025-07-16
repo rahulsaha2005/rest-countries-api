@@ -99,12 +99,12 @@ function CountryDetail() {
                   key={borderName.cca3}
                   id="btn-border"
                   onClick={() => {
-                    setLoading(true); // trigger shimmer
+                    setLoading(true); 
                     setTimeout(() => {
                       navigate(`/country/${borderName.name.common}`, {
                         state: { countryData: borderName },
                       });
-                    }, 500); // delay navigation by 1 second
+                    }, 
                   }}
                 >
                   {borderName.name.common}
