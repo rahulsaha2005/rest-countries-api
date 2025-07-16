@@ -38,17 +38,16 @@ function CountryDetail() {
       if (state?.countryData) {
         setCountry(state.countryData);
 
-        // Simulate shimmer delay
         setTimeout(() => {
           fetchBorders(state.countryData.borders);
-        }, 500); // 3-second shimmer before loading borders
+        }, 500); 
       }
     };
 
     loadData();
   }, [name, navigate, state]);
 
-  // Show shimmer until data is loaded
+ 
   if (loading || !country) return <ShimmerCountryDetail />;
 
   return (
