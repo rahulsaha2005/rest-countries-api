@@ -7,7 +7,7 @@ export default function FilteredCountries({
   searchText,
   countries,
 }) {
-  const navigate = useNavigate(); // ✅ hook to programmatically navigate
+  const navigate = useNavigate();
 
   const filteredCountries = countries.filter((country) => {
     const matchesRegion =
